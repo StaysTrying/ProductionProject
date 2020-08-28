@@ -18,5 +18,7 @@ public class Main extends Application {
 
         primaryStage.setTitle("FXML Welcome");
         primaryStage.setScene(scene);
+        scene.getStylesheets().add("main.css");
         primaryStage.show();
+
     }}
