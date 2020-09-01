@@ -19,10 +19,13 @@
 
     <children>
         <TabPane>
-            <Tab fx:id="tab1" text="tab 1">
+            <Tab fx:id="tab1" text="Production Line">
             </Tab>
 
-            <Tab fx:id="tab2" text="tab 2">
+            <Tab fx:id="tab2" text="Produce">
+            </Tab>
+
+            <Tab fx:id="tab3" text="Production Log">
             </Tab>
         </TabPane>
     </children>
