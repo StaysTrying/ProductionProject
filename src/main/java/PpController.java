@@ -58,6 +58,11 @@ public class PpController {
     }
 
     public void initialize() {
+
+        cmbQuantity.setEditable(true);
+
+        cmbQuantity.getSelectionModel().selectFirst();
+
         for( int count = 1; count <=10; count++ ){
             cmbQuantity.getItems().add(String.valueOf(count));
         }
@@ -104,6 +109,8 @@ public class PpController {
 
             stmt.executeUpdate(sql);
 
+
+            System.out.println("Select * FROM Products");
 
             // STEP 4: Clean-up environment
 
