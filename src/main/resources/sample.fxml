@@ -17,11 +17,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="275.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="275.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PpController">
 
 
     <TabPane>
-        <Tab fx:id="tab1" text="Production Line">
+        <Tab fx:id="tbProductionLine" text="Production Line">
          <content>
             <AnchorPane prefHeight="245.0" prefWidth="300.0">
                <children>
@@ -47,7 +47,7 @@
                         <ChoiceBox prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                      </children>
                   </GridPane>
-                  <Button fx:id="buttonAddItem" layoutX="117.0" layoutY="112.0" mnemonicParsing="false" onAction="#event" text="Add Item" />
+                  <Button fx:id="buttonAddItem" layoutX="117.0" layoutY="112.0" mnemonicParsing="false" onAction="#addItem" text="Add Item" />
                   <TableView layoutX="105.0" layoutY="158.0" prefHeight="74.0" prefWidth="178.0">
                     <columns>
                       <TableColumn prefWidth="75.0" text="C1" />
@@ -60,7 +60,7 @@
          </content>
         </Tab>
 
-        <Tab fx:id="tab2" text="Produce">
+        <Tab fx:id="tbProduce" text="Produce">
          <content>
             <AnchorPane prefHeight="247.0" prefWidth="300.0">
                <children>
@@ -73,7 +73,7 @@
             </AnchorPane>
          </content></Tab>
 
-        <Tab fx:id="tab3" text="Production Log">
+        <Tab fx:id="tbProductionLog" text="Production Log">
          <content>
             <AnchorPane prefHeight="245.0" prefWidth="300.0">
                <children>

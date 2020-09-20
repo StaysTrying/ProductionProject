@@ -1,34 +1,37 @@
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.Tab;
+import javafx.event.ActionEvent;
+import java.sql.*;
 
-
-public class Controller {
+public class PpController {
 
     @FXML
-    private Tab tab1;
+    private Tab tbProductionLine;
 
     @FXML
     private Button buttonAddItem;
 
     @FXML
-    private Tab tab2;
+    private Tab tbProduce;
 
     @FXML
     private Button buttonRecProd;
 
     @FXML
-    private Tab tab3;
+    private Tab tbProductionLog;
 
     @FXML
-    void event(ActionEvent event) {
-    System.out.println("Event Handled.");
+    void addItem(ActionEvent event) {
+
     }
 
     @FXML
     void record(ActionEvent event) {
-    System.out.println("Product Recorded.");
+
     }
+
+    public void initialize() {
+    }
+
 }
