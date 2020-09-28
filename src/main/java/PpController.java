@@ -7,11 +7,8 @@ import java.sql.Statement;
 import java.sql.*;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.Tab;
+import javafx.scene.control.*;
 import javafx.event.ActionEvent;
-import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 
 
@@ -30,7 +27,7 @@ public class PpController {
     private TextField prodManuf;
 
     @FXML
-    private ComboBox<String> itemType;
+    private ChoiceBox<String> itemType;
 
     @FXML
     private Button buttonAddItem;
@@ -59,10 +56,14 @@ public class PpController {
 
     public void initialize() {
 
+        itemType.setValue("Audio");
+        for ( ItemType itemCode: ItemType.values()) {
+            itemType.getItems().add(itemCode.toString());
+        }
+
+        cmbQuantity.setValue("Choose Quantity");
         cmbQuantity.setEditable(true);
-
         cmbQuantity.getSelectionModel().selectFirst();
-
         for (int count = 1; count <= 10; count++) {
             cmbQuantity.getItems().add(String.valueOf(count));
         }
@@ -95,7 +96,6 @@ public class PpController {
                 System.out.println(rs.getString(2));
                 System.out.println(rs.getString(3));
                 System.out.println(rs.getString(4));
-
             }
 
             // STEP 4: Clean-up environment
@@ -113,7 +113,6 @@ public class PpController {
         final String JDBC_DRIVER = "org.h2.Driver";
         final String DB_URL = "jdbc:h2:./res/ProdProj";
 
-
         //  Database credentials
         final String USER = "";
         final String PASS = "";
@@ -121,6 +120,7 @@ public class PpController {
         Connection conn = null;
         Statement stmt = null;
 
+        String type = itemType.getValue();
         String name = prodName.getText();
         String manufacturer = prodManuf.getText();
 
@@ -135,7 +135,7 @@ public class PpController {
             stmt = conn.createStatement();
 
             String sql = "INSERT INTO Product(type, manufacturer, name) " +
-                    "VALUES ( 'Audio', '" + manufacturer + "' , '" + name + "' )";
+                    "VALUES ( '" + type + "', '" + manufacturer + "' , '" + name + "' )";
 
             stmt.executeUpdate(sql);
 

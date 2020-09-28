@@ -1,7 +1,9 @@
 .root{
-    -fx-background-color: grey;
-    -fx-border-color: turquoise;
+    -fx-background-color: #e7870c;
+    -fx-border-color: grey;
     -fx-border-width: 5px;
-
 }
 
+.pane{
+    -fx-border-radius: 20px;
+}
