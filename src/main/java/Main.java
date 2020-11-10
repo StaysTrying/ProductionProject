@@ -1,4 +1,5 @@
 import javafx.application.Application;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -9,6 +10,7 @@ import java.awt.event.ActionEvent;
 public class Main extends Application {
 
     public static void main(String[] args) {
+
         launch(args);
     }
 
@@ -18,12 +20,9 @@ public class Main extends Application {
 
         Scene scene = new Scene(root, 300, 275);
 
-
         primaryStage.setTitle("Production Project");
         primaryStage.setScene(scene);
         scene.getStylesheets().add("main.css");
         primaryStage.show();
-
     }
-
 }

@@ -2,8 +2,12 @@
     -fx-background-color: #e7870c;
     -fx-border-color: grey;
     -fx-border-width: 5px;
+    -fx-font-family: sans-serif;
 }
 
-.pane{
-    -fx-border-radius: 20px;
+.header-section {
+    -fx-padding: 10px;
+    -fx-font-size: 20px;
+    -fx-background-color: teal;
 }
+
