@@ -5,9 +5,28 @@
     -fx-font-family: sans-serif;
 }
 
-.header-section {
-    -fx-padding: 10px;
-    -fx-font-size: 20px;
-    -fx-background-color: teal;
+.button {
+    -fx-background-color: #fcdcb8;
+    -fx-font-family: sans-serif;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(7, 7, 7, 0.3), 5,.75, 0.0, 0.0);
 }
+
+.table-view {
+    -fx-border-color: grey;
+    -fx-border-width: 3px;
+}
+
+.label {
+    -fx-font-family: SansSerif;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+
+}
+
+.tab-pane {
+    -fx-font-weight: bold;
+}
+
 
