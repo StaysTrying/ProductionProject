@@ -1,4 +1,4 @@
-.root{
+.root {
     -fx-background-color: #e7870c;
     -fx-border-color: grey;
     -fx-border-width: 5px;
@@ -10,7 +10,7 @@
     -fx-font-family: sans-serif;
     -fx-font-weight: bold;
     -fx-cursor: hand;
-    -fx-effect: dropshadow(gaussian, rgba(7, 7, 7, 0.3), 5,.75, 0.0, 0.0);
+    -fx-effect: dropshadow(gaussian, rgba(7, 7, 7, 0.3), 5, .75, 0.0, 0.0);
 }
 
 .table-view {

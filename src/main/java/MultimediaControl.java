@@ -1,3 +1,6 @@
+/**
+ * @author Tyler Krawec
+ */
 public interface MultimediaControl {
     public void play();
 

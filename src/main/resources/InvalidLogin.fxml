@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="172.0" prefWidth="385.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Rectangle fx:id="headerRect" arcHeight="1.0" arcWidth="1.0" fill="#e7870c" height="36.0" smooth="false" stroke="#6d6963" strokeType="INSIDE" width="385.0" />
+        <Label layoutX="46.0" layoutY="7.0" prefHeight="27.0" prefWidth="293.0" text="Username or Password Entry is Invalid!">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="9.0" layoutY="85.0" text="Username must contain your first and last name seperated by a space" />
+        <Label layoutX="9.0" layoutY="142.0" text="and a special character (!@#$%^&amp;*)" />
+        <Label layoutX="13.0" layoutY="42.0" prefHeight="27.0" prefWidth="357.0" text="If you do not have an account yet, please create one">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Line endX="192.0" endY="1.52587890625E-5" layoutX="193.0" layoutY="74.0" startX="-194.6000213623047" startY="1.52587890625E-5" />
+        <Label layoutX="9.0" layoutY="128.0" text="Password must contain at least one lowercase and uppercase letter," />
+        <Label layoutX="9.0" layoutY="101.0" text="(Example: John Doe)" />
+    </children>
+</Pane>

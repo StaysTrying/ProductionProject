@@ -1,3 +1,6 @@
+/**
+ * @author Tyler Krawec
+ */
 public class Screen implements ScreenSpec {
 
     String resolution;
@@ -33,7 +36,7 @@ public class Screen implements ScreenSpec {
     }
 
     public String toString() {
-        return  "\n" + "Resolution: " + resolution + "\n"
+        return "\n" + "Resolution: " + resolution + "\n"
                 + "Refresh rate: " + refreshRate + "\n"
                 + "Response time: " + responseTime;
     }

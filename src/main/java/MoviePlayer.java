@@ -1,3 +1,6 @@
+/**
+ * @author Tyler Krawec
+ */
 public class MoviePlayer extends Product implements MultimediaControl {
 
     Screen screen;
@@ -13,22 +16,30 @@ public class MoviePlayer extends Product implements MultimediaControl {
     }
 
     @Override
-    public void play() { System.out.println("Playing movie"); }
+    public void play() {
+        System.out.println("Playing movie");
+    }
 
     @Override
-    public void stop() { System.out.println("Stopping movie"); }
+    public void stop() {
+        System.out.println("Stopping movie");
+    }
 
     @Override
-    public void previous() { System.out.println("Previous movie"); }
+    public void previous() {
+        System.out.println("Previous movie");
+    }
 
     @Override
-    public void next() { System.out.println("Next movie"); }
+    public void next() {
+        System.out.println("Next movie");
+    }
 
-    public String toString(){
+    public String toString() {
         return "Name: " + name + "\n"
                 + "Manufacturer: " + manufacturer + "\n"
                 + "Type: " + type + "\n"
                 + "Screen: " + screen + "\n"
-                +"Monitor Type: " + monitorType;
+                + "Monitor Type: " + monitorType;
     }
 }

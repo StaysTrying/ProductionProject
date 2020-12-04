@@ -1,3 +1,6 @@
+/**
+ * @author Tyler Krawec
+ */
 public enum ItemType {
 
     AUDIO("AU"),
@@ -7,11 +10,13 @@ public enum ItemType {
 
     public final String code;
 
-    ItemType(String itemCode){
+    ItemType(String itemCode) {
         code = itemCode;
     }
 
-    public String getItemCode(){ return code; }
+    public String getItemCode() {
+        return code;
+    }
 
 }
 
