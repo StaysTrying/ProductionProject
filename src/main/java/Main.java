@@ -6,23 +6,31 @@ import javafx.stage.Stage;
 
 /**
  * @author Tyler Krawec
+ * <p>
+ * Main process for my program that runs on program start
  */
 public class Main extends Application {
 
-    public static void main(String[] args) {
-        launch(args);
-    }
+  /**
+   * Launches my program
+   */
+  public static void main(String[] args) {
+    launch(args);
+  }
 
-    @Override
-    public void start(Stage primaryStage) throws Exception {
-        Parent loginRoot = FXMLLoader.load(getClass().getResource("EmployeeLogin.fxml"));
+  /**
+   * Sets up first GUI stage for user to interact with
+   */
+  @Override
+  public void start(Stage primaryStage) throws Exception {
+    Parent loginRoot = FXMLLoader.load(getClass().getResource("EmployeeLogin.fxml"));
 
-        Scene login = new Scene(loginRoot, 429, 336);
+    Scene login = new Scene(loginRoot, 429, 336);
 
-        primaryStage.setTitle("Production Project");
-        primaryStage.setScene(login);
-        primaryStage.show();
+    primaryStage.setTitle("Production Project");
+    primaryStage.setScene(login);
+    primaryStage.show();
 
 
-    }
+  }
 }

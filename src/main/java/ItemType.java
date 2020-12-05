@@ -1,22 +1,33 @@
 /**
  * @author Tyler Krawec
+ * <p>
+ * An enumeration for the possible ItemTypes for any item created with my
+ * production app
  */
 public enum ItemType {
 
-    AUDIO("AU"),
-    VISUAL("VI"),
-    AUDIO_MOBILE("AM"),
-    VISUAL_MOBILE("VM");
+  AUDIO("AU"),
+  VISUAL("VI"),
+  AUDIO_MOBILE("AM"),
+  VISUAL_MOBILE("VM");
 
-    public final String code;
+  public final String code;
 
-    ItemType(String itemCode) {
-        code = itemCode;
-    }
+  /**
+   * Sets the code for an Item to an abbreviation of its type
+   *
+   * @param itemCode = abbreviation for ItemType to be used in my production app
+   */
+  ItemType(String itemCode) {
+    code = itemCode;
+  }
 
-    public String getItemCode() {
-        return code;
-    }
+  /**
+   * Returns an item's code
+   */
+  public String getItemCode() {
+    return code;
+  }
 
 }
 

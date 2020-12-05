@@ -16,8 +16,9 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
 
-<Pane prefHeight="340.0" prefWidth="435.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PpController">
+<Pane prefHeight="340.0" prefWidth="435.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProductionController">
 
 
     <TabPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="336.0" prefWidth="429.0">
@@ -28,6 +29,8 @@
                         <Label layoutX="8.0" layoutY="14.0" text="Product Name" />
                         <Label layoutX="10.0" layoutY="49.0" text="Manufacturer" />
                         <Label layoutX="21.0" layoutY="78.0" text="Item Type" />
+                  <Rectangle fx:id="invalidName" arcHeight="5.0" arcWidth="5.0" fill="RED" height="32.0" layoutX="102.0" layoutY="11.0" stroke="RED" strokeType="INSIDE" width="132.0" />
+                  <Rectangle fx:id="invalidManufacturer" arcHeight="5.0" arcWidth="5.0" fill="RED" height="32.0" layoutX="101.0" layoutY="42.0" stroke="RED" strokeType="INSIDE" width="132.0" />
                         <GridPane fx:id="prodLineInput" layoutX="106.0" layoutY="12.0" prefHeight="91.0" prefWidth="124.0">
                             <columnConstraints>
                                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
