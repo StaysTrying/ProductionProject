@@ -69,7 +69,7 @@ public class ProductionRecord {
    * Method for generating a serial number for a ProductionRecord based on attributes from the
    * received Product object
    *
-   * @param product = Product object received from the list view selection in the GUI
+   * @param product   = Product object received from the list view selection in the GUI
    * @param enumCount = Count of the ItemType of the Product object to be produced
    */
   public void generateSerialNum(Product product, int enumCount) {
@@ -79,6 +79,14 @@ public class ProductionRecord {
     setSerialNum(
         product.getManufacturer().substring(0, 3).toUpperCase() + product.type.getItemCode()
             .substring(0, 2) + serialCount);
+  }
+
+  public int getProductID(){
+    return productID;
+  }
+
+  public void setProductID(int productId){
+    this.productID = productId;
   }
 
   /**

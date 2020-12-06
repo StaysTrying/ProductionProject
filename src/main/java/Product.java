@@ -62,7 +62,12 @@ public abstract class Product implements Item {
   }
 
   /**
-   * Method to get a Product object's type, set by database
+   * Method to set a Product object's id, set by database
+   */
+  public void setId(int id) { this.id = id; }
+
+  /**
+   * Method to get a Product object's id, set by database
    */
   public int getId() {
     return id;

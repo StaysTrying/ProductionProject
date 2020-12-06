@@ -88,13 +88,16 @@ public class ProductionController {
    * Method that runs at program start to set up visual elements of my GUI.
    */
   public void initialize() {
+
     invalidName.setOpacity(0);
     invalidManufacturer.setOpacity(0);
-    connectToDB();
+
     fillProdLine();
     fillProdRun();
+
     populateTblView();
     populateListView();
+
     populateTxtArea();
     populateCmbBox();
     populateTypeBox();
@@ -134,6 +137,7 @@ public class ProductionController {
    * Fills ProdLine observable list with data from my Product table
    */
   public void fillProdLine() {
+    connectToDB();
     try {
       //Create SQL Statement
       stmt = conn.createStatement();
@@ -149,6 +153,7 @@ public class ProductionController {
       }
 
       stmt.close();
+      conn.close();
 
     } catch (SQLException e) {
       e.printStackTrace();
@@ -159,9 +164,13 @@ public class ProductionController {
    * Fills ProdRun observable list with data from my ProductionRecord table
    */
   public void fillProdRun() {
+
+    connectToDB();
+
     productionRun.clear();
 
     try {
+
       //Create SQL Statement
       stmt = conn.createStatement();
 
@@ -250,6 +259,7 @@ public class ProductionController {
    * Adds user entered data to my Product table in my database
    */
   public void updateProduct() {
+    connectToDB();
     invalidName.setOpacity(0);
     invalidManufacturer.setOpacity(0);
     try {
@@ -280,9 +290,10 @@ public class ProductionController {
         Product prod = new Widget(name, ItemType.valueOf(type), manufacturer);
         productLine.add(prod);
 
-        pstmt.close();
-        conn.close();
       }
+
+      pstmt.close();
+      conn.close();
     } catch (IllegalStateException e) {
       System.out.println("Print stuff if bad " + e);
     } catch (SQLException e) {
@@ -296,7 +307,7 @@ public class ProductionController {
    * table
    */
   public void recordProduction() {
-
+    connectToDB();
     int quantity = parseInt(cmbQuantity.getValue());
     Product prod = prodListView.getSelectionModel().getSelectedItem();
 
@@ -305,12 +316,12 @@ public class ProductionController {
       String sql = "INSERT INTO ProductionRecord(product_id, serial_num, date_produced) " +
           "VALUES (?,?,?)";
 
-      stmt = conn.createStatement();
       pstmt = conn.prepareStatement(sql);
 
       for (int count = 1; count <= quantity; count++) {
 
         ProductionRecord pr = new ProductionRecord(prod);
+
         int productId = prod.getId();
         String serialNum = pr.getSerialNum();
         Timestamp ts = new Timestamp(pr.getProdDate().getTime());
@@ -320,14 +331,15 @@ public class ProductionController {
         pstmt.setString(3, String.valueOf(ts));
 
         pstmt.executeUpdate(); // Execute the query
-      }
 
-      connectToDB();
-      fillProdRun();
-      populateTxtArea();
+      }
 
       pstmt.close();
       conn.close();
+
+      fillProdRun();
+      populateTxtArea();
+
 
     } catch (IllegalStateException e) {
       System.out.println("Print stuff if bad " + e);
