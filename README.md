@@ -17,19 +17,23 @@ Below is my generated documentation for my code that describes every class and m
 
 ## Diagrams
 This is the class diagram of my program that shows the inheritence and interconnectoins of my classes. <br />
-![Class Diagram](resources/to/img.png)
+![Class Diagram](resources/ProdProjClassDiagram.JPG)
+The next image is a diagram that shows the database connecions in my program. <br />
+![Database Diagram](resources/ProdProjDbDiagram.JPG)
 
 ## Getting Started
 
 
 ## Built With
-
+* IntelliJ
+* SceneBuilder
 
 ## Contributing
-
+* Professor Vanselow
+* Vladamir Hardy
 
 ## Author
-
+* Tyler Krawec
 
 ## License
 
