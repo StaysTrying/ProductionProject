@@ -9,7 +9,7 @@ I took extra time to ensure that my progam is asthetically pleasing, and require
 
 ## Demonstration
 This is a video that illustrates my programs functionality.<br />
-![ProductionProject Gif](ProductionProject/resources/)
+![ProductionProject Gif](ProductionProject/resources/ProductionProjectGif.gif)
 
 ## Documentation
 
