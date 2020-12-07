@@ -12,10 +12,12 @@ This is a video that illustrates my programs functionality. <br />
 ![Production Project Gif](resources/ProductionProjectGif.gif)
 
 ## Documentation
+Below is my generated documentation for my code that describes every class and method or my program. <br />
 [JavaDoc](https://github.com/StaysTrying/ProductionProject/blob/master/docs/index-files/index-1.html)
 
 ## Diagrams
-
+This is the class diagram of my program that shows the inheritence and interconnectoins of my classes. <br />
+![Class Diagram](resources/to/img.png)
 
 ## Getting Started
 
