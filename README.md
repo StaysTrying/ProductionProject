@@ -8,7 +8,7 @@ This program also has apassword protected login screen so that only registered u
 I took extra time to ensure that my progam is asthetically pleasing, and required actions are explained to the user.<br />
 
 ## Demonstration
-This is a video that illustrates my programs functionality.<br />
+This is a video that illustrates my programs functionality. <br />
 ![Production Project Gif](ProductionProject/ProductionProjectGif.gif)
 
 ## Documentation
