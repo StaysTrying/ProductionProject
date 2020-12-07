@@ -30,20 +30,23 @@ The next image is a diagram that shows the database connecions in my program. <b
 
 ## Contributing
 * Professor Vanselow
-* Vladamir Hardy
 
 ## Author
 * Tyler Krawec
 
 ## License
-
+[License](https://github.com/StaysTrying/ProductionProject/blob/master/LICENSE)
 
 ## Acknowledgments
-
+* Albert Lepree
+* Vladamir Hardy
+* Jeremy Martin
+* Andrew Cavallaro
 
 ## History
-
+Program released 12/6/2020
 
 ## Key Programming Concepts Utilized
+
 
 
