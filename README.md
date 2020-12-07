@@ -12,7 +12,7 @@ This is a video that illustrates my programs functionality. <br />
 ![Production Project Gif](resources/ProductionProjectGif.gif)
 
 ## Documentation
-
+[JavaDoc](https://github.com/StaysTrying/ProductionProject/blob/master/docs/index-files/index-1.html)
 
 ## Diagrams
 
