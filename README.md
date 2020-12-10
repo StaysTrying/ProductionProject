@@ -13,7 +13,7 @@ This is a video that illustrates my programs functionality. <br />
 
 ## Documentation
 Below my JavaDocs that describes the functionality of my classes and methods. <br />
-[JavaDoc](https://github.com/StaysTrying/ProductionProject/blob/master/docs/index-files/index-1.html)
+[JavaDoc](https://StaysTrying.github.io/ProductionProject/javadocs/index.html)
 
 ## Diagrams
 This is the class diagram of my program that shows the inheritence and interconnectoins of my classes. <br />
